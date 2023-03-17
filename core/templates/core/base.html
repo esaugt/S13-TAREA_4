@@ -38,7 +38,7 @@
               <h4 class="fst-italic">Categorías</h4>
               <ol class="list-unstyled mb-0">
                 {% for item in categories %}
-                  <li><a href="{% url 'category' %}"?cat={{ item.id }}>{{ item.name }}</a></li>
+                  <li><a href={% url 'category' %}?cat={{ item.id }}>{{ item.name }}</a></li>
                 {% endfor %}
               </ol>
             </div>

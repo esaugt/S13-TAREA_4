@@ -8,9 +8,9 @@
             <img src="{{ post.image.url }}" class="img-fluid" alt="">
         </div>
 
-        <strong class="d-inline-block mb-2 mt-3 text-primary"><a href="{% url 'category' %}"?cat={{ post.category.id }}>{{ post.category }}</a></strong>
+        <strong class="d-inline-block mb-2 mt-3 text-primary"><a href={% url 'category' %}?cat={{ post.category.id }}>{{ post.category }}</a></strong>
         <h2 class="blog-post-title mb-1">{{ post.title }}</h2>
-        <p class="blog-post-meta">{{ post.created|date:"d M Y" }} por <a href="{% url 'author' %}"?aut={{ post.author.id }}>{{ post.author }}</a></p>
+        <p class="blog-post-meta">{{ post.created|date:"d M Y" }} por <a href={% url 'author' %}?aut={{ post.author.id }}>{{ post.author }}</a></p>
 
         <p class="lead my-3">{{ post.excerpt }}</p>
         <hr>

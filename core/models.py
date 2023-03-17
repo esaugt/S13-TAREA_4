@@ -37,7 +37,7 @@ class Tag (models.Model):
 # MODELO DE LOS POSTS
 class Post(models.Model):
 	title = models.CharField(max_length=250, verbose_name='Título')
-	excerpt = models.CharField(max_length=250,verbose_name='Bajada')
+	excerpt = models.TextField(verbose_name='Bajada')
 	content = RichTextField(verbose_name='Contenido')
 	image = models.ImageField(upload_to='posts', null=True, blank=True, verbose_name='Imagen')
 	published = models.BooleanField(default=False, verbose_name='Publicado')
